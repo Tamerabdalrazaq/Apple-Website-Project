@@ -1,0 +1,209 @@
+@font-face{
+    src: url('../font/sf-pro-text_regular.woff2');
+    font-family: sf-regular;
+}
+@font-face{
+    src: url('../font/sf-pro-text_semibold.woff2');
+    font-family: sf-semibold;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sf-regular;
+}
+
+:root{
+    --navbar-color: rgba(0, 0, 0, 0.1);
+    --main-color: rgb(20,20,20);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section{
+    width: 100%;
+    height: 78vh;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+h1{
+    font-family: sf-semibold;
+    font-size: 5.4rem;
+    margin-bottom: 1rem;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: sf-regular;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    font-size: 1.9rem;
+}
+
+
+
+/* NAVBAR */
+
+nav{
+    width: 100vw;
+    height: 4.4rem;
+    background-color: #323233;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav .container{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+    
+nav .container  a{
+    color: #c0c0c0;
+    margin: 0 3.4rem;
+    font-size: 1.4rem;
+    font-family: sf-regular;
+    transition: color .4s;
+}
+
+nav .container i{
+    font-size: 1.8rem;
+}
+
+nav .container  a:hover{
+    color: #fff;
+}
+
+
+
+/* SECTION 1+2+3 */
+.section1{
+    background: url('../img/sec1.jpg') no-repeat center center/cover;
+}
+
+.section2{
+    background: url('../img/sec2.jpg') no-repeat center center/cover;
+}
+
+.section3{
+    background-color:#000;
+}
+
+.section1 .wrapper, .section2 .wrapper, .section3 .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.section2 .wrapper{
+    padding-top: 5rem ;
+}
+
+.section3 .wrapper{
+    width: 100%;
+    padding-top: 4rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.section1 .wrapper h1{
+    color: #1D1D1F;
+}
+
+.section2 .wrapper h1, .section2 .wrapper h3, .section3 .wrapper h1, .section3 .wrapper h3{
+    color: #ffffff;
+}
+
+.section1 .wrapper a, .section2 .wrapper a, .section3 .wrapper a, .section1 .wrapper i, .section2 .wrapper i, .section3 .wrapper div i{
+    color: #277DD4;
+}
+
+.section1 .wrapper a:hover, .section2 .wrapper a:hover{
+    text-decoration: underline;
+}
+
+.section3 .wrapper h4{
+    color: #C61E28;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+
+/* SECTION 4+5 */
+
+main .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80vh;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+main .grid .gson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+}
+
+main .grid h1{
+    font-size: 3.4rem;
+}
+
+main .grid h3{
+    font-size: 2rem;
+}
+main .grid .gson.tright
+,main .grid .gson.bleft
+,main .grid .gson.bright {
+    color: #ffffff;
+}
+
+main .grid .gson.bright{
+    background-color: #000;
+}
+
+main .grid .gson.tright a
+,main .grid .gson.tleft a
+,main .grid .gson.bright a
+,main .grid .gson.tright i
+,main .grid .gson.tleft i
+,main .grid .gson.bright i{
+    color: #277DD4;
+}
+
+.section1 .wrapper a:hover, .section2 .wrapper a:hover{
+    text-decoration: underline;
+}
+
+main .grid .gson.tleft{
+    background: url('../img/sec4l.jpg') no-repeat center center/cover;
+}
+main .grid .gson.tright{
+    background: url('../img/sec4r.jpg') no-repeat center center/cover;
+}
+
+main .grid .gson.bleft{
+    background: url('../img/sec5l.jpg') no-repeat center center/cover;
+}
