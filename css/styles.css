@@ -157,6 +157,7 @@ main .grid{
     grid-auto-rows: 80vh;
     grid-gap: 1rem;
     padding: 1rem;
+    text-align: center;
 }
 
 main .grid .gson{
@@ -165,6 +166,10 @@ main .grid .gson{
     align-items: center;
     justify-content: flex-start;
     padding-top: 2rem;
+}
+
+main .grid .gson.bleft{
+    justify-content: flex-end;
 }
 
 main .grid h1{
@@ -193,7 +198,7 @@ main .grid .gson.tright a
     color: #277DD4;
 }
 
-.section1 .wrapper a:hover, .section2 .wrapper a:hover{
+main .grid .gson a:hover{
     text-decoration: underline;
 }
 
@@ -206,4 +211,5 @@ main .grid .gson.tright{
 
 main .grid .gson.bleft{
     background: url('../img/sec5l.jpg') no-repeat center center/cover;
+    
 }
